@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DentalSmart · Automatización para clínicas</title>
+  <!-- Font Awesome 6 (gratuito) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Navegación -->
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-tooth"></i> 
+        <span>Dental<span style="color:#2fa4b2;">AI</span></span>
+      </div>
+      <div class="nav-links">
+        <a href="#">Producto</a>
+        <a href="#">CRM</a>
+        <a href="#">Precios</a>
+        <a href="#">Contacto</a>
+      </div>
+      <button class="btn-demo" id="demoButton"><i class="far fa-calendar-check" style="margin-right: 8px;"></i>Ver demo</button>
+    </nav>
+
+    <!-- Hero principal -->
+    <div class="hero">
+      <div>
+        <h1>Automatiza tu clínica dental <span>sin perder el toque humano</span></h1>
+        <p>Mensajes y llamadas automáticos, gestión de citas (agendar/cancelar), CRM unificado y campañas en Meta Ads, todo en un solo panel.</p>
+        <div class="hero-buttons">
+          <button class="btn-primary" id="startButton"><i class="fas fa-robot" style="margin-right: 8px;"></i>Empezar automatización</button>
+          <button class="btn-secondary" id="watchButton"><i class="fas fa-play" style="margin-right: 8px;"></i>Ver cómo funciona</button>
+        </div>
+        <div style="margin-top: 40px; display: flex; gap: 20px; color: #2fa4b2;">
+          <span><i class="fas fa-check-circle"></i> 14 días gratis</span>
+          <span><i class="fas fa-check-circle"></i> Sin tarjeta</span>
+        </div>
+      </div>
+      <div class="hero-image" id="heroImage">
+        <span>✨ Dra. Martínez · 98% satisfacción</span>
+      </div>
+    </div>
+
+    <!-- Características principales -->
+    <h2 class="section-title">Todo lo que tu clínica necesita, automatizado</h2>
+    <div class="section-subtitle">Desde el primer contacto hasta el CRM, pasando por anuncios inteligentes.</div>
+
+    <div class="features-grid">
+      <div class="feature-card" id="feature1">
+        <div class="feature-icon"><i class="fas fa-comment-dots"></i></div>
+        <h3>Mensajes + llamadas</h3>
+        <p>Respuestas instantáneas por WhatsApp, SMS y voz con IA. Nunca pierdas un paciente potencial.</p>
+      </div>
+      <div class="feature-card" id="feature2">
+        <div class="feature-icon"><i class="fas fa-calendar-alt"></i></div>
+        <h3>Gestión de citas</h3>
+        <p>Agenda, reprograma o cancela automáticamente. Sincronización con Google Calendar y recordatorios.</p>
+      </div>
+      <div class="feature-card" id="feature3">
+        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Publicidad Meta AI</h3>
+        <p>Campañas en Facebook/Instagram optimizadas con inteligencia artificial para captar pacientes locales.</p>
+      </div>
+      <div class="feature-card" id="feature4">
+        <div class="feature-icon"><i class="fas fa-database"></i></div>
+        <h3>CRM completo</h3>
+        <p>Base de datos con historial, tratamientos, preferencias y todo lo que necesitas para fidelizar.</p>
+      </div>
+    </div>
+
+    <!-- Bloque CRM + imagen extra -->
+    <div class="crm-preview">
+      <div>
+        <h2><i class="fas fa-users"></i> CRM dental inteligente</h2>
+        <p class="crm-desc">Accede a la ficha de cada paciente: citas pasadas, tratamientos, alertas y notas. Segmenta y crea campañas personalizadas. Todo visible con un solo clic.</p>
+        <div class="crm-stats">
+          <div><span>+2.400</span> <br>pacientes activos</div>
+          <div><span>98%</span> <br>retención</div>
+        </div>
+        <button class="btn-primary" id="crmButton" style="margin-top: 24px; background: #0b2b40; border-color: #0b2b40;"><i class="fas-regular fa-eye"></i> Ver demo del CRM</button>
+      </div>
+      <div class="crm-image" id="crmImage">
+        <span>📋 Panel CRM · pacientes</span>
+      </div>
+    </div>
+
+    <!-- Sección Ads: Meta, Facebook, Instagram -->
+    <div class="ads-section">
+      <div class="ads-content">
+        <h3><i class="fab fa-facebook" style="color:#1877f2;"></i> <i class="fab fa-instagram" style="color:#c32aa3;"></i>  Anuncios con Meta AI</h3>
+        <p style="font-size: 1.2rem; max-width: 550px;">Conecta tu cuenta de Facebook/Instagram y deja que nuestra IA cree, publique y optimice campañas para atraer más pacientes.</p>
+        <div class="ads-icons">
+          <i class="fab fa-facebook-messenger"></i>
+          <i class="fas fa-ad"></i>
+          <i class="fas fa-chart-pie"></i>
+        </div>
+        <button class="btn-ads" id="adsButton"><i class="fab fa-meta"></i> Activar Meta Ads ahora</button>
+      </div>
+      <div class="ads-image" id="adsImage"></div>
+    </div>
+
+    <!-- Galería de imágenes -->
+    <div class="gallery-row">
+      <div class="gallery-item" id="gallery1" style="background-image: url('https://placecats.com/1200/800?random=4');"></div>
+      <div class="gallery-item" id="gallery2" style="background-image: url('https://placecats.com/1200/801?random=5');"></div>
+      <div class="gallery-item" id="gallery3" style="background-image: url('https://placecats.com/1200/802?random=6');"></div>
+    </div>
+  </div>
+  
+  <!-- Footer CTA -->
+  <div class="footer-cta">
+    <h2>Automatiza, convierte y fideliza. <br>Prueba DentalAI gratis</h2>
+    <button class="btn-primary" id="ctaButton" style="background: white; color:#0b2b40; padding: 18px 50px; font-size: 1.3rem;"><i class="fas fa-calendar-plus"></i> Programar cita con un experto</button>
+    <p style="margin-top: 30px; opacity: 0.8;">O <u>habla con ventas</u> · 15 min de consultoría personalizada</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-links">
+    <span>© 2025 DentalAI · Automatización para clínicas</span>
+    <span>Imágenes: <span style="color:white;">placecats.com</span> (cortesía visual)</span>
+    <span>🇪🇸 Spanish landing · todos los derechos reservados</span>
+  </div>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
